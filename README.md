@@ -26,3 +26,5 @@ Direita(n)         // Gira n vezes para a direita (ex: Direita(2) = 180°)
 
 Esquerda()         // Gira 90° para a esquerda
 Esquerda(n)        // Gira n vezes para a esquerda
+```
+Jogo funcional porém ainda em desenvolvimento, pode haver novas mudanças futuramente...
