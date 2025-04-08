@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caminho das Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+  <script src="./codex-game/popup.js"></script>       
+<script src="./codex-game/mapa.js"></script>
+<script src="./codex-game/player.js"></script>     
+<script src="./codex-game/pontos.js"></script>
+<script src="./codex-game/executar.js"></script>
+<script src="./codex-game/script.js"></script>
+</head>
+<body>
+  <div class="tela">
+    <div class="center">
+      <h1>Caminho das Moedas</h1>
+      <div class="layout">
+        <div id="mapa" class="grid"></div>
+      
+        <div class="painel">
+<textarea id="codigo" placeholder="Avance()
+Direita()
+Avance()">
+</textarea>
+      
+          <div class="butt">
+            <button class="butt-style enter" onclick="jogo.executarCodigo(document.getElementById('codigo').value)">Executar</button>
+            <button class="butt-style refresh" onclick="jogo.reiniciar()">Reiniciar</button>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2 id="popup-titulo">Parabéns!</h2> 
+        <p id="popup-mensagem"></p>
+        <button onclick="fecharPopup()">OK</button>
+      </div>
+    </div>    
+    <footer class="rodape">Game developed by: Grupo do balaco baco</footer>
+  </div>
+</body>
+
+</html>
